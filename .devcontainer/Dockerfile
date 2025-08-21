@@ -16,6 +16,6 @@ RUN mkdir /mnt/refine
 # if we get rid of the current container.
 VOLUME /mnt/refine
  
-#Expose the OpenRefine server port outside the container
-EXPOSE 3333
-ENTRYPOINT [ "/home/openrefine/openrefine-3.9.3/refine"]
+# #Expose the OpenRefine server port outside the container
+# EXPOSE 3333
+# ENTRYPOINT [ "/home/openrefine/openrefine-3.9.3/refine"]
