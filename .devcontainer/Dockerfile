@@ -1,3 +1,5 @@
+FROM ubuntu/jre:21-24.04_stable
+
 WORKDIR /home/openrefine
 
 RUN wget -O /home/openrefine/openrefine.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.9.3/openrefine-linux-3.9.3.tar.gz 
