@@ -1,4 +1,4 @@
-FROM ubuntu/jre:21-24.04_stable
+FROM ubuntu:22.04
 
 WORKDIR /home/openrefine
 
