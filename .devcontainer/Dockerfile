@@ -18,5 +18,4 @@ VOLUME /mnt/refine
  
 #Expose the OpenRefine server port outside the container
 EXPOSE 3333
-
-CMD ['/home/openrefine/openrefine-3.9.3/refine']
+ENTRYPOINT [ "/home/openrefine/openrefine-3.9.3/refine"]
