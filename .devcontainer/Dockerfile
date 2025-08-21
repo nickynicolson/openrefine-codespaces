@@ -3,8 +3,7 @@ FROM ubuntu:22.04
 WORKDIR /home/openrefine
 
 RUN apt-get update -y
-RUN apt-get install -y wget
-RUN apt install -y default-jre
+RUN apt-get install -y wget default-jre
 RUN wget -O openrefine.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.9.3/openrefine-linux-3.9.3.tar.gz 
 
 RUN tar xzf openrefine.tar.gz 
