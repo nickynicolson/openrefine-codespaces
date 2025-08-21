@@ -1,4 +1,5 @@
 {
   "name": "OpenRefine",
-  "build": { "dockerfile": "Dockerfile" }
+  "build": { "dockerfile": "Dockerfile" },
+  "forwardPorts": [3333]
 }
