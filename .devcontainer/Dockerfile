@@ -2,9 +2,10 @@ FROM ubuntu/jre:21-24.04_stable
 
 WORKDIR /home/openrefine
 
-RUN wget -O /home/openrefine/openrefine.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.9.3/openrefine-linux-3.9.3.tar.gz 
+RUN apt-get install -y wget
+RUN wget -O openrefine.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.9.3/openrefine-linux-3.9.3.tar.gz 
 
-RUN tar xzf /home/openrefine/openrefine.tar.gz 
+RUN tar xzf openrefine.tar.gz 
 
 # Create a directory we can save OpenRefine user project files into
 RUN mkdir /mnt/refine
