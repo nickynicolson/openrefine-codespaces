@@ -2,5 +2,5 @@
   "name": "OpenRefine",
   "build": { "dockerfile": "Dockerfile" },
   "forwardPorts": [3333],
-  "postStartCommand":"/home/openrefine/openrefine-3.9.3/refine"
+  "postStartCommand":"/home/openrefine/openrefine-3.9.3/refine &"
 }
