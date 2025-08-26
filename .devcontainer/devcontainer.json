@@ -4,7 +4,7 @@
   "forwardPorts": [3333],
   "remoteEnv": {
     // Use a GitHub Codespaces secret:
-    "family": "${localEnv:FAMILY}",
+    "FAMILY": "${localEnv:FAMILY}",
   },
   "postStartCommand": "nohup bash -c '/home/openrefine/openrefine-3.9.3/refine &'"
 }
